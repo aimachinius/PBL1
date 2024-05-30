@@ -448,7 +448,7 @@ void RearraybyKeyboard(FILE *f, List *col, struct Number *row, int N)
         for (int i = 0; i < N; i++)
         {
             run = checkConvergence(col, N);
-            if (!run)
+            if (run == 0)
             {
                 printf("He phuong trinh khong thoa dieu kien hoi tu \n");
                 printf("-------------------------------------------------------\n");
